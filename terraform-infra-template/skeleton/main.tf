@@ -22,7 +22,7 @@ resource "aws_vpc" "main" {
 
 resource "aws_instance" "example" {
   ami           = "ami-0ecb62995f68bb549"
-  instance_type = "${{ values.type }}"
+  instance_type = "${{ values.instancetype }}"
 
   tags = {
     Name = "raman-HelloWorld-2"
